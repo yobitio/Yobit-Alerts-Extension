@@ -1,0 +1,21 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "popup.html"
+   },
+   "description": "Extension to set price alerts on Yobit.net",
+   "icons": {
+      "128": "logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwdM8w3VmkUiSBEwO1rxDUZZho9Ci2hs9IP8Q6G0NZxBpKJ7v9pSPSHBmlUjIbh0ORuczVhb6L3RZMmNNnmIpSgL1qHLespfiUrjoxJHlQ7cjDIXGTBgMNDCiVEtiPVusL9clg747X4p8p7ypfwGTizljFibzH7Fx9esXQge4SrtyNqE0g29YEDnBmtVoL3Qe7Kz6iTmrw0BnmcTMVKoPkqXP12Q3vC9Y1jZYJX5NqeGK+znubmkqWavU82NktNM5E/ez3jZmr2d0hzPB3W3lKRXAXCbq4+2d++XG5R093irBLOo3jym8LdflNgaLNHFzPogbixnEc5Mm0TfFvON8AwIDAQAB",
+   "manifest_version": 2,
+   "name": "Yobit Alerts",
+   "options_page": "options.html",
+   "permissions": [ "storage", "https://yobit.net/", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0",
+   "web_accessible_resources": [ "logo.png" ]
+}

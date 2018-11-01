@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yobit Alert</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+<div id="logo"><img src="logo_full.png"></div>
+<div style="width:300px;display:table;">
+  <form name="alert" onSubmit="return false;">
+  <input type="hidden" name="host" id="host" value="" readonly>
+  <input type="hidden" name="csrf_token" id="csrf_token" value="" readonly>
+  <table width="100%">
+    <tr>
+      <td>Coin pair</td>
+      <td><select id="coin" name="coin" disabled required style="width: 240px;"></select></td>
+    </tr>
+    <tr>
+      <td>Price for alarm</td>
+      <td><select name="buy" required><option value="true"> &lt; </option><option value="false" selected> &gt; </option></select><input type="number" name="price" step="0.00000001" value="0.00000001" required style="width: 178px"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><button id="alert_button" class="btn btn-primary btn-sm" style="margin: 5px;">Add condition to alarm</button></td>
+    </tr>
+  </table>
+  </form><br/>
+  <div id="error"></div>
+  <div id="content"></div>
+</div>
+</body>
+</html>
